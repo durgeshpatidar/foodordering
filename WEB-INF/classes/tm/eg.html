@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function func()
+		{
+			var v=document.getElementsByName("gender");
+			var s="";
+			for(i=0;i<3;i++)
+			{
+				if(v[i].checked==true)
+				s=s+v[i].value;
+			}
+			document.getElementById("t").value=s;
+			
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<label>Selected checkbox :</label>
+		<input type="text"  id="t" value="">
+		<br><br>	
+		<label>Gender :</label><br>
+		Male<input type="checkbox" name="gender" id="check" value="male" class="chk"><br>
+		Female<input type="checkbox" name="gender" value="female" id="check" class="chk"><br>
+		Other<input type="checkbox" name="gender" value="other" id="check" class="chk"><br>
+		<br>
+		<button onclick="func()">Submit</button>
+		
+	</center>
+</body>
+</html>

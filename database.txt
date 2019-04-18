@@ -1,0 +1,14 @@
+create table customer 
+(name varchar(30) not null,email varchar(30) not null unique as primary key,phone varchar(13) not null unique,gender varchar(1) not null,password varchar(10) not null);
+
+insert into customer (name,email,phone,gender,password) values(?,?,?,?,?)
+
+insert into radmin(name,email,phone,gender,password) values();
+
+alter table customer add path char(150);
+
+delete from customer where gender='m';
+
+alter table tablename drop image;
+
+update registration set type='nonveg' where email='rahul@gmail.com';
